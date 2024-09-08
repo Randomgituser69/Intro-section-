@@ -1,0 +1,63 @@
+/*
+  Josh's Custom CSS Reset
+    https://www.joshwcomeau.com/css/custom-css-reset/
+    */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+#root,
+#__next {
+  isolation: isolate;
+}
+/* CSS Styles 👇 */
+:root {
+  --Almost-White: hsl(0, 0%, 98%);
+  --Medium-Gray: hsl(0, 0%, 41%);
+  --Almost-Black: hsl(0, 0%, 8%);
+}
+* {
+  font-family: 'Epilogue', sans-serif;
+}
+body {
+  font-size: 1.125rem;
+}
+.image-hero {
+  background-image: url('image-hero-mobile.png');
+}
+@media screen and  (min-width: 37.5rem) {
+  .image-hero {
+    background-image: url('Image-hero-desktop.png');
+  }
+}
